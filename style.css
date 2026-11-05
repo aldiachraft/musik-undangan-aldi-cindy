@@ -302,3 +302,9 @@ button {
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
+.rsvp-form button {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}

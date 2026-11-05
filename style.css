@@ -57,12 +57,13 @@ body {
   border-radius: 160px 160px 12px 12px;
 }
 
-h1 {
+.cover h1 {
   font-family: 'Great Vibes', cursive;
   font-size: clamp(55px, 12vw, 75px);
   font-weight: 400;
   margin-top: 20px;
   color: #69482f;
+  text-transform: none;
 }
 
 h1 span {

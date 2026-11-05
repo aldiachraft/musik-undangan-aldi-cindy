@@ -110,3 +110,49 @@ button {
   letter-spacing: 3px;
   color: #8b704e;
 }
+.invitation {
+  max-width: 480px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 60px 25px;
+  text-align: center;
+  background: linear-gradient(145deg, #faf4e9, #e4d2bc);
+  color: #624832;
+}
+
+.invitation h1 {
+  margin: 20px 0;
+}
+
+.invitation h2 {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 15px 0;
+}
+
+.couple, .event, .location {
+  margin-top: 45px;
+  padding: 25px 15px;
+  border: 1px solid #c3a16b;
+  border-radius: 15px;
+  line-height: 1.8;
+}
+
+.and {
+  color: #bd9656;
+  font-size: 35px;
+}
+
+.location a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #67472f;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.closing {
+  margin-top: 45px;
+  line-height: 1.8;
+}

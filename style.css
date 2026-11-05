@@ -58,16 +58,19 @@ body {
 }
 
 .cover h1 {
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-size: clamp(65px, 14vw, 90px);
+  font-family: 'Monsieur La Doulaise', cursive !important;
+  font-size: clamp(48px, 11vw, 65px) !important;
   font-weight: 400;
-  margin-top: 20px;
-  color: #69482f;
+  color: #69482f !important;
   text-transform: none;
 }
 
-h1 span {
-  color: inherit;
+.cover h1 span,
+.cover h1 .initial {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  font-weight: inherit !important;
 }
 
 .line {

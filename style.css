@@ -58,8 +58,8 @@ body {
 }
 
 .cover h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: clamp(55px, 12vw, 75px);
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: clamp(65px, 14vw, 90px);
   font-weight: 400;
   margin-top: 20px;
   color: #69482f;
@@ -195,6 +195,3 @@ button {
   letter-spacing: 1px;
   color: #e9d5b5;
 }
-<h1><span class="initial">A</span>ldi
-<span>&</span>
-<span class="initial">C</span>indy</h1>

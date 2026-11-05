@@ -219,20 +219,20 @@ button {
 }
 
 .gallery-photo {
-  margin: 20px auto;
-  max-width: 340px;
-  padding: 7px;
+  margin: 18px auto;
+  max-width: 260px;
+  padding: 5px;
   border: 1px solid #c3a16b;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px #60472d20;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px #60472d20;
 }
 
 .gallery-photo img {
   display: block;
   width: 100%;
-  height: 380px;
+  height: 290px;
   object-fit: cover;
-  border-radius: 7px;
+  border-radius: 6px;
 }
 
 .gallery-caption {

@@ -250,3 +250,55 @@ button {
   object-fit: cover;
   border-radius: 5px;
 }
+/* RSVP */
+.rsvp {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 40px auto;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.rsvp h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  color: #69482f;
+  margin: 15px 0;
+}
+
+.rsvp-text {
+  color: #80654b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 20px 0 25px;
+}
+
+.rsvp-form {
+  max-width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rsvp-form input,
+.rsvp-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #c3a16b;
+  border-radius: 8px;
+  background: #faf4e9;
+  color: #624832;
+  font-family: 'Poppins', sans-serif;
+}
+
+.rsvp-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #67472f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}

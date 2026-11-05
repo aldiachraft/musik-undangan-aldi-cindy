@@ -39,16 +39,6 @@ body {
 }
 
 .photo-frame {
-  width: min(75%, 290px);
-  height: 330px;
-  border: 3px solid #c3a16b;
-  padding: 6px;
-  border-radius: 150px 150px 12px 12px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px #60472d30;
-}
-
-.photo-frame {
   width: min(85%, 340px);
   height: 420px;
   border: 3px solid #c3a16b;

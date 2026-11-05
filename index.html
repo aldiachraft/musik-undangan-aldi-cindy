@@ -148,21 +148,28 @@
     dan memberikan doa restu.
   </p>
 
-  <form class="rsvp-form">
-    <input type="text" placeholder="Nama Lengkap" required>
+  <form class="rsvp-form" id="rsvpForm">
+  <input
+    type="text"
+    id="nama"
+    placeholder="Nama Lengkap"
+    required
+  >
 
-    <select required>
-      <option value="">Konfirmasi Kehadiran</option>
-      <option value="Hadir">Hadir</option>
-      <option value="Tidak Hadir">Tidak Hadir</option>
-    </select>
+  <select id="kehadiran" required>
+    <option value="">Konfirmasi Kehadiran</option>
+    <option value="Hadir">Hadir</option>
+    <option value="Tidak Hadir">Tidak Hadir</option>
+  </select>
 
-    <select>
-      <option value="1">1 Orang</option>
-      <option value="2">2 Orang</option>
-    </select>
+  <select id="jumlah" required>
+    <option value="1">1 Orang</option>
+    <option value="2">2 Orang</option>
+  </select>
 
-    <button type="button">KIRIM KONFIRMASI</button>
-  </form>
-</section>
-</main>
+  <button type="submit" id="rsvpButton">
+    KIRIM KONFIRMASI
+  </button>
+
+  <p id="rsvpMessage"></p>
+</form>

@@ -1,7 +1,4 @@
 function openInvitation() {
-  alert("Selamat datang di pernikahan Aldi & Cindy ❤️");
-}
-function openInvitation() {
   document.querySelector(".cover").style.display = "none";
 
   const invitation = document.getElementById("invitation");
@@ -9,31 +6,31 @@ function openInvitation() {
 
   window.scrollTo(0, 0);
 }
+
 function updateCountdown() {
   const weddingDate = new Date("2026-12-06T08:00:00+07:00").getTime();
-
-  const now = new Date().getTime();
+  const now = Date.now();
   const distance = weddingDate - now;
 
+  const days = document.getElementById("days");
+  const hours = document.getElementById("hours");
+  const minutes = document.getElementById("minutes");
+  const seconds = document.getElementById("seconds");
+
+  if (!days || !hours || !minutes || !seconds) return;
+
   if (distance <= 0) {
-    document.getElementById("days").textContent = "0";
-    document.getElementById("hours").textContent = "0";
-    document.getElementById("minutes").textContent = "0";
-    document.getElementById("seconds").textContent = "0";
+    days.textContent = "0";
+    hours.textContent = "0";
+    minutes.textContent = "0";
+    seconds.textContent = "0";
     return;
   }
 
-  document.getElementById("days").textContent =
-    Math.floor(distance / (1000 * 60 * 60 * 24));
-
-  document.getElementById("hours").textContent =
-    Math.floor((distance / (1000 * 60 * 60)) % 24);
-
-  document.getElementById("minutes").textContent =
-    Math.floor((distance / (1000 * 60)) % 60);
-
-  document.getElementById("seconds").textContent =
-    Math.floor((distance / 1000) % 60);
+  days.textContent = Math.floor(distance / 86400000);
+  hours.textContent = Math.floor((distance % 86400000) / 3600000);
+  minutes.textContent = Math.floor((distance % 3600000) / 60000);
+  seconds.textContent = Math.floor((distance % 60000) / 1000);
 }
 
 updateCountdown();

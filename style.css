@@ -54,7 +54,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 160px 160px 6px 6px;
+  border-radius: 160px 160px 12px 12px;
 }
 
 h1 {

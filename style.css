@@ -157,3 +157,41 @@ button {
   margin-top: 45px;
   line-height: 1.8;
 }
+.countdown {
+  margin-top: 45px;
+  padding: 35px 15px;
+  text-align: center;
+}
+
+.countdown h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  color: #69482f;
+  margin: 15px 0 25px;
+}
+
+.countdown-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.countdown-box div {
+  background: #67472f;
+  color: white;
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+
+.countdown-box span {
+  display: block;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.countdown-box small {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #e9d5b5;
+}

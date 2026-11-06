@@ -36,10 +36,14 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 // MENGIRIM RSVP KE GOOGLE SHEETS
-const rsvpForm = document.getElementById("rsvpForm");
+// RSVP GOOGLE SHEETS
+document.addEventListener("DOMContentLoaded", function () {
 
-if (rsvpForm) {
-  rsvpForm.addEventListener("submit", async function(event) {
+  const rsvpForm = document.getElementById("rsvpForm");
+
+  if (!rsvpForm) return;
+
+  rsvpForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const button = document.getElementById("rsvpButton");
@@ -55,28 +59,29 @@ if (rsvpForm) {
 
     button.disabled = true;
     button.textContent = "MENGIRIM...";
-    message.textContent = "";
+    message.textContent = "Sedang mengirim konfirmasi...";
 
-    try {
-      await fetch(url, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "text/plain;charset=utf-8"
-        },
-        body: JSON.stringify(data)
-      });
-
-      message.textContent =
-        "Permintaan telah dikirim. Terima kasih!";
+    fetch(url, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      body: JSON.stringify(data)
+    })
+    .then(function () {
+      message.textContent = "Terima kasih, konfirmasi telah dikirim.";
       rsvpForm.reset();
+    })
+    .catch(function (error) {
+      console.error(error);
+      message.textContent = "Gagal mengirim. Silakan coba kembali.";
+    })
+    .finally(function () {
+      button.disabled = false;
+      button.textContent = "KIRIM KONFIRMASI";
+    });
 
-    } catch (error) {
-      message.textContent =
-        "Pengiriman gagal. Silakan coba kembali.";
-    }
-
-    button.disabled = false;
-    button.textContent = "KIRIM KONFIRMASI";
   });
-}
+
+});

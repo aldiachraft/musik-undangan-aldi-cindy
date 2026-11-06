@@ -112,3 +112,34 @@ if (guest) {
   document.getElementById("guestName").textContent =
     guest.replace(/\+/g, " ");
 }
+// ANIMASI SCROLL REVEAL
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const sections = document.querySelectorAll(
+    ".invitation > section"
+  );
+
+  sections.forEach(function(section) {
+    section.classList.add("reveal");
+  });
+
+  const observer = new IntersectionObserver(function(entries) {
+
+    entries.forEach(function(entry) {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+
+    });
+
+  }, {
+    threshold: 0.15
+  });
+
+  sections.forEach(function(section) {
+    observer.observe(section);
+  });
+
+});

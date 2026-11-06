@@ -4,6 +4,8 @@ function openInvitation() {
   const invitation = document.getElementById("invitation");
   invitation.style.display = "block";
 
+  window.scrollTo(0, 0);
+
   const music = document.getElementById("weddingMusic");
 
   if (music) {
@@ -11,8 +13,6 @@ function openInvitation() {
       console.log("Musik belum dapat diputar:", error);
     });
   }
-
-  window.scrollTo(0, 0);
 }
 
 function updateCountdown() {

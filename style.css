@@ -308,3 +308,18 @@ button {
   pointer-events: auto;
   cursor: pointer;
 }
+.rsvp {
+  position: relative;
+  z-index: 20;
+}
+
+.rsvp-form {
+  position: relative;
+  z-index: 21;
+}
+
+.rsvp-form button {
+  position: relative;
+  z-index: 22;
+  pointer-events: auto !important;
+}

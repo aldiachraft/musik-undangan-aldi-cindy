@@ -323,3 +323,30 @@ button {
   z-index: 22;
   pointer-events: auto !important;
 }
+.opening-greeting {
+  margin: 30px auto;
+  padding: 10px 5px;
+  text-align: center;
+  color: #624832;
+  line-height: 1.9;
+}
+
+.bismillah {
+  font-size: 27px;
+  margin-bottom: 20px;
+  line-height: 2;
+  color: #806044;
+}
+
+.islamic-greeting {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.invitation-text {
+  font-size: 13px;
+  line-height: 2;
+  margin: 15px 0;
+}

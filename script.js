@@ -4,6 +4,14 @@ function openInvitation() {
   const invitation = document.getElementById("invitation");
   invitation.style.display = "block";
 
+  const music = document.getElementById("weddingMusic");
+
+  if (music) {
+    music.play().catch(function(error) {
+      console.log("Musik belum dapat diputar:", error);
+    });
+  }
+
   window.scrollTo(0, 0);
 }
 

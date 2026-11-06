@@ -462,3 +462,43 @@ button {
     transition: none;
   }
 }
+/* ORNAMEN JAWA */
+
+.invitation {
+  position: relative;
+  isolation: isolate;
+}
+
+.ornament-layer {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.13;
+  pointer-events: none;
+  z-index: 0;
+  animation: ornamentFloat 8s ease-in-out infinite;
+}
+
+.ornament-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.invitation > :not(.ornament-layer) {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes ornamentFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+}

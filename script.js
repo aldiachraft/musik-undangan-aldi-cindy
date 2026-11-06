@@ -96,3 +96,11 @@ function copyAccount() {
       alert("Tidak dapat menyalin nomor rekening.");
     });
 }
+// NAMA TAMU OTOMATIS DARI LINK
+const urlParams = new URLSearchParams(window.location.search);
+const guest = urlParams.get("to");
+
+if (guest) {
+  document.getElementById("guestName").textContent =
+    guest.replace(/\+/g, " ");
+}

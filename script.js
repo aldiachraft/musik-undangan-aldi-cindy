@@ -85,3 +85,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+function copyAccount() {
+  const account = "2004446426";
+
+  navigator.clipboard.writeText(account)
+    .then(function() {
+      alert("Nomor rekening berhasil disalin!");
+    })
+    .catch(function() {
+      alert("Tidak dapat menyalin nomor rekening.");
+    });
+}

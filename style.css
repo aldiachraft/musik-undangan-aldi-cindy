@@ -350,3 +350,77 @@ button {
   line-height: 2;
   margin: 15px 0;
 }
+/* WEDDING GIFT */
+.wedding-gift {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 40px auto;
+  padding: 35px 20px;
+  text-align: center;
+  color: #624832;
+}
+
+.wedding-gift h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  color: #69482f;
+  margin: 15px 0;
+}
+
+.gift-text {
+  font-size: 13px;
+  line-height: 2;
+  margin: 20px 0 30px;
+}
+
+.gift-card {
+  max-width: 320px;
+  margin: auto;
+  padding: 30px 20px;
+  border: 1px solid #c3a16b;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f8efe1, #ead9c3);
+  box-shadow: 0 8px 20px #60472d18;
+}
+
+.gift-icon {
+  font-size: 35px;
+  color: #b28a50;
+}
+
+.gift-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+}
+
+.bank-name {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.account-number {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.account-name {
+  font-size: 12px;
+}
+
+.gift-card button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  background: #67472f;
+  color: white;
+  cursor: pointer;
+}
+
+.gift-closing {
+  margin-top: 30px;
+  font-size: 13px;
+  font-style: italic;
+}

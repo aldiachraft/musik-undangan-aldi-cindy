@@ -530,11 +530,11 @@ button {
   z-index: 0;
 @keyframes heroOrnamentFloat {
   0%, 100% {
-    transform: translate(-50%, calc(-50% + 9px));
+    transform: translate(-50%, calc(-50% + 10px));
   }
 
   50% {
-    transform: translate(-50%, calc(-53% + 9px));
+    transform: translate(-50%, calc(-53% + 10px));
   }
 }
 .wedding-hero .ornament-layer img {
@@ -581,7 +581,7 @@ button {
 }
 
 .hero-countdown-title {
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 3px;
   color: #806044;
   margin: 35px 0 15px;

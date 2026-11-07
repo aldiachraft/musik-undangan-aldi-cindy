@@ -332,7 +332,7 @@ button {
 }
 
 .bismillah {
-  font-size: 27px;
+  font-size: 25px;
   margin-bottom: 20px;
   line-height: 2;
   color: #806044;
@@ -506,8 +506,8 @@ button {
 
 .wedding-hero {
   position: relative;
-  min-height: 90vh;
-  padding: 45px 15px;
+  min-height: 100svh;
+  padding: 25px 15px 65px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -520,12 +520,12 @@ button {
 /* ORNAMEN JAWA */
 .wedding-hero .ornament-layer {
   position: absolute;
-  width: min(90%, 380px);
-  height: 430px;
+  width: min(100%, 430px);
+  height: 490px;
   top: 50%;
   left: 50%;
   right: auto;
-  opacity: 0.25;
+  opacity: 0.28;
   pointer-events: none;
   z-index: 0;
   animation: heroOrnamentFloat 7s ease-in-out infinite;
@@ -542,6 +542,7 @@ button {
   position: relative;
   z-index: 2;
   width: 100%;
+  transform: translateY(-30px);
 }
 
 .hero-content .subtitle {

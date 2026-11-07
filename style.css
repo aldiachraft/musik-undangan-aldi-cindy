@@ -579,13 +579,13 @@ button {
   letter-spacing: 3px;
   color: #806044;
   margin: 35px 0 15px;
-  transform: translateY(20px);
+  transform: translateY(28px);
 }
 
 .wedding-hero .countdown-box {
   max-width: 320px;
   margin: 0 auto;
-  transform: translateY(20px);
+  transform: translateY(28px);
 }
 
 @keyframes heroOrnamentFloat {

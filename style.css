@@ -518,6 +518,7 @@ button {
 }
 
 /* ORNAMEN JAWA */
+
 .wedding-hero .ornament-layer {
   position: absolute;
   width: min(100%, 450px);
@@ -528,6 +529,18 @@ button {
   opacity: 0.28;
   pointer-events: none;
   z-index: 0;
+  animation: heroOrnamentFloat 7s ease-in-out infinite;
+}
+
+.wedding-hero .ornament-layer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ANIMASI ORNAMEN */
+
 @keyframes heroOrnamentFloat {
   0%, 100% {
     transform: translate(-50%, calc(-50% + 10px));
@@ -537,13 +550,9 @@ button {
     transform: translate(-50%, calc(-53% + 10px));
   }
 }
-.wedding-hero .ornament-layer img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 
 /* ISI HALAMAN */
+
 .hero-content {
   position: relative;
   z-index: 2;

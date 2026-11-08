@@ -606,7 +606,7 @@ button {
 }
 
 .wedding-hero .countdown-box div {
-  padding: 22px 5px;
+  padding: 22px 8px;
   border-radius: 12px;
 }
 
@@ -615,7 +615,7 @@ button {
 }
 
 .wedding-hero .countdown-box small {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 @keyframes heroOrnamentFloat {

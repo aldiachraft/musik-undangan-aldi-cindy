@@ -595,14 +595,14 @@ button {
   letter-spacing: 3px;
   color: #69482f;
   margin: 35px 0 15px;
-  transform: translateY(65px);
+  transform: translateY(75px);
 }
 
 .wedding-hero .countdown-box {
   max-width: 350px;
   gap: 10px;
   margin: 0 auto;
-  transform: translateY(65px);
+  transform: translateY(75px);
 }
 
 .wedding-hero .countdown-box div {
@@ -611,11 +611,11 @@ button {
 }
 
 .wedding-hero .countdown-box span {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .wedding-hero .countdown-box small {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 @keyframes heroOrnamentFloat {

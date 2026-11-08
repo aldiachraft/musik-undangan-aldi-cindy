@@ -324,8 +324,8 @@ button {
   pointer-events: auto !important;
 }
 .opening-greeting {
-  margin: 30px auto;
-  padding: 10px 5px;
+  margin: 70px auto;
+  padding: 40px 5px;
   text-align: center;
   color: #624832;
   line-height: 1.9;
@@ -506,7 +506,7 @@ button {
 
 .wedding-hero {
   position: relative;
-  min-height: 100svh;
+  min-height: 1115svh;
   padding: 25px 15px 65px;
   box-sizing: border-box;
   display: flex;
@@ -594,13 +594,13 @@ button {
   letter-spacing: 3px;
   color: #806044;
   margin: 35px 0 15px;
-  transform: translateY(28px);
+  transform: translateY(65px);
 }
 
 .wedding-hero .countdown-box {
   max-width: 320px;
   margin: 0 auto;
-  transform: translateY(28px);
+  transform: translateY(65px);
 }
 
 @keyframes heroOrnamentFloat {

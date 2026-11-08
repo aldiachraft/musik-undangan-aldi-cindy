@@ -590,17 +590,32 @@ button {
 }
 
 .hero-countdown-title {
-  font-size: 11px;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 3px;
-  color: #806044;
+  color: #69482f;
   margin: 35px 0 15px;
   transform: translateY(65px);
 }
 
 .wedding-hero .countdown-box {
-  max-width: 320px;
+  max-width: 350px;
+  gap: 10px;
   margin: 0 auto;
   transform: translateY(65px);
+}
+
+.wedding-hero .countdown-box div {
+  padding: 22px 5px;
+  border-radius: 12px;
+}
+
+.wedding-hero .countdown-box span {
+  font-size: 30px;
+}
+
+.wedding-hero .countdown-box small {
+  font-size: 10px;
 }
 
 @keyframes heroOrnamentFloat {
